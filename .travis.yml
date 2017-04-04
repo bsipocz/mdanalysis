@@ -30,6 +30,7 @@ env:
     - CONDA_CHANNELS="conda-forge biobuilds"
     # Install griddataformats from PIP so that scipy is only installed in the full build (#1147)
     - PIP_DEPENDENCIES='griddataformats'
+    - DEBUG=True
   matrix:
     - NAME='minimal' PYTHON_VERSION=2.7 MAIN_CMD_OPTIONS='--with-memleak'
 
